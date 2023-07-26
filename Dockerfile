@@ -1,14 +1,23 @@
-FROM ubuntu
+# Use the base image with Python3 and pip pre-installed
+FROM python:3
 
-EXPOSE 80
+# Update package lists and install additional packages
+RUN apt-get update \
+    && apt-get install -y python3 python3-pip
 
-COPY app.py .
-COPY requirements.txt .
-COPY images/* images/
-COPY README.md .
+# copy the requirements file into the image
+COPY ./requirements.txt /app/requirements.txt
 
-RUN apt-get update
-RUN apt-get install python3 python3-pip
+# switch working directory
+WORKDIR /app
+
+# install the dependencies and packages in the requirements file
 RUN pip install -r requirements.txt
 
-ENTRYPOINT ["python", "app.py"]
+# copy every content from the local file to the image
+COPY . /app
+
+EXPOSE 3000
+
+ENTRYPOINT ["python"]
+CMD ["app.py"]

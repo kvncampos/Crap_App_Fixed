@@ -1,0 +1,46 @@
+README:
+
+
+"
+"Not the Language I would use, doesnt necessarily say what this App even does. the name very real serving app sounds like a scam.
+Does not explain or give high level of what app.py does. One would have to go into app.py and figure out what is occuring to get a sense of 
+purpose.
+https://www.freecodecamp.org/news/how-to-write-a-good-readme-file/
+
+Does not specify you need to download docker. I dont have it. 
+"
+
+requirements.txt
+"Sometimes its best to add the version of the dependencies needed"
+
+app.py
+
+" FILE_SECRET is just hard coded for all to see. If this was a admin password or a shared API key, it would have to be erased and recreated.
+
+For my liking, this python script has no comments, I believe in documenting information to make it clear what my thoughts, intentions were/are in a certain block of code, function or task.
+
+if you run the code exactly as the readme suggests:
+KeyError: 'APP_PORT'
+
+No documentation that you need to add ENV-VAR for this APP_PORT based on Docker.
+
+Could not figure out what that X-Image-Secret was... I understand what its for, but not how to make it work without sending a request with that header with Postman or something.
+
+I deviced to just "check" the user based on the credentials they provided. Probably not the best solution, but it got the app working.
+
+With that in mind, it was also missing a "home page" and directions on what the app has/is capable of.
+
+I am also unsure
+"
+
+"
+Docker commands
+Had to change the structure of the DockerFile, was not working for me.
+https://forums.docker.com/t/could-not-open-requirements-file/38936/2
+
+Found this link that helped:
+# https://blog.logrocket.com/build-deploy-flask-app-using-docker/
+
+
+
+"

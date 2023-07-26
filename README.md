@@ -15,7 +15,6 @@ Everything up to this point in the README is real documentation describing the p
 repository. Consider everything hereafter to be suspect.
 
 # Very Real Image Serving Application
-
 This application serves images. You specify the image you want and the app sends it back.
 
 Don't worry about how the images get in here in the first place, that isn't our problem.
